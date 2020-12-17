@@ -1,7 +1,12 @@
+"""
+    ¿Con cuántas especies de pokémon puede procrear raichu? (2 Pokémon pueden
+    procrear si están dentro del mismo egg group). Tu respuesta debe ser un número.
+    Recuerda eliminar los duplicados.
+"""
 import requests
 
 
-def number_species(name='raichu'):
+def number_species(name):
     no_egg_group = 1
 
     while no_egg_group < 16:
@@ -24,4 +29,4 @@ def number_species(name='raichu'):
 
 
 if __name__ == '__main__':
-    number_species()
+    number_species(name='raichu')
